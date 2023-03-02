@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/component.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>Contact Page</title>
 </head>
-<header>
-    <nav>
-        
-        <a href="index.html">Home Page</a><br>
-        <a href="#">contact</a><br>
-        <a href="AboutUs.html">About Us</a><br>
-        <a href="TermsAndConditions.html">Terms and Conditions</a><br>
 
-    </nav>
-
-</header>
 <body>
-    
+    <header>
+        <p class="name">Thrift Store</p>
+
+        <nav class="header-nav">
+            <a href="index.html">Homepage</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="TermsAndConditions.html">Terms</a>
+        </nav>
+
+        <div class="profile">
+            <p>Jethro</p>
+            <img src="./jet.jpg" alt="" id="profile-picture">
+        </div>
+    </header>
+
     <main>
-        <h1>Contact Page</h1>
-   
-    <form>
-        <label for="fullname">Full Name</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="e.g sam tom"><br>
+        <form>
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe"><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="location">Location</label><br>
+            <select name="location" id="">
+                <option value="Wuse">Wuse</option>
+                <option value="Berger">Berger</option>
+                <option value="Maitama">Maitama</option>
+                <option value="Area-1">Area 1</option>
+            </select><br>
 
-        <label for="phone">Phone</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="e.g 08134246578"><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="e.g dg@gmail.com"><br>
-
-        <label for="location">Location</label><br>
-        <select name="location" id="location">
-            <option value="wuse">Wuse</option>
-            <option value="jabi">Jabi</option>
-            <option value="bannex">Bannex</option>
-        </select><br>
-        
-
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" placeholder="e.g asd12@bg"><br>
-
-        <label for="message">Message</label><br>
-        <textarea name="" id="" cols="30" rows="10" name="message" id="message"></textarea><br>
-
-        <button>Send</button>
-    </form>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="message">Message</label><br>
+            <textarea name="" id="" cols="30" rows="10" name="message" id="message"></textarea><br>
+            <button>Send</button>
+            <!-- <input type="submit" value="Send"> -->
+        </form>
     </main>
-    <footer>
-        <p> This is the footer</p>
-      </footer>
 </body>
+
 </html>
